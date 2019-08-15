@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Load data
 
-```{r}
+```{r cache=TRUE}
 data <- read.csv("./Data/activity.csv", header = TRUE)
 data$date <- as.Date(data$date,"%Y-%m-%d")
 ```
